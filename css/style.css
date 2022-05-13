@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 2rem;
+}
+
+/* ==Navigation============================== */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem;
+    max-width: 107rem;
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 0.3rem 1rem;
+    margin: 0rem 1.5rem;
+    color: #3b3b3b;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    transition: all ease 0.3s;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #202020;
+}
+
+.right-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2.5rem;
+}
+
+.right-nav a{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.right-nav .like{
+    background-color: #fff0ee;
+    color: #ff6c57;
+}
+
+.right-nav .cart{
+    background-color: #fff0ee;
+    color: #ff6c57;
+}
+
+.right-nav a span{
+    position: absolute;
+    top: -0.7rem;
+    right: -0.7rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #202020;
+}
+
+.menu li a:hover, .menu .active{
+    color: #ff6c57;
+    transition: all ease 0.3s;
+}
+
+
+/* ==Search Banner============================== */
+#search-banner{
+    max-width: 125rem;
+    height: 50rem;
+    border-radius: 3rem;
+    background-color: #ffe3df;
+    margin: 1rem auto;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: bottom right;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.ring-1{
+    position: absolute;
+    left: 80rem;
+    top: 10.5rem;
+    width: 35rem;
+    height: 35rem;
+    object-fit: contain;
+    object-position: center;
+}
+
+.search-banner-text{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin-left: 7rem;
+    position: relative;
+}
+
+.search-banner-text h1{
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    color: #202020;
+}
