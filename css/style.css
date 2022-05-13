@@ -140,3 +140,50 @@ body{
     line-height: 5.5rem;
     color: #202020;
 }
+
+.search-banner-text strong{
+    color: #ff6c57;
+    font-size: 2rem;
+    margin-top: 0.4rem;
+}
+
+.search-box{
+    background-color: #ffffff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 0rem 0.5rem 0rem 2rem;
+    border-radius: 3rem;
+}
+
+.search-box i{
+    font-size: 2rem;
+    color: #3b3b3b;
+    margin: 0rem 1rem;
+}
+
+.search-box .search-input{
+    height: 4rem;
+    border: none;
+    width: 100%;
+    padding: 0rem 1rem;
+    outline: none;
+}
+
+.search-box .search-btn{
+    width: 22rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background-color: #ff6c57;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.search-box .search-btn:hover{
+    background-color: #fd998a;
+    transition: all ease 0.3s;
+}
