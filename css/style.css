@@ -46,10 +46,11 @@ body{
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 5.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: #202020;
+    font-family: 'Dancing Script', cursive;
 }
 
 .right-nav{
@@ -69,12 +70,12 @@ body{
 }
 
 .right-nav .like{
-    background-color: #fff0ee;
+    background-color: #fce9e7;
     color: #ff6c57;
 }
 
 .right-nav .cart{
-    background-color: #fff0ee;
+    background-color: #fce9e7;
     color: #ff6c57;
 }
 
@@ -105,7 +106,7 @@ body{
     max-width: 125rem;
     height: 50rem;
     border-radius: 3rem;
-    background-color: #ffe3df;
+    background-color: #fce9e7;
     margin: 1rem auto;
     position: relative;
     overflow: hidden;
@@ -186,4 +187,52 @@ body{
 .search-box .search-btn:hover{
     background-color: #fd998a;
     transition: all ease 0.3s;
+}
+
+/* ==New products============================== */
+
+.section--first{
+    height: 50rem;
+}
+
+.section--first strong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6c57;
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+}
+
+.new-products-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #202020;
+}
+
+.new-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 5rem;
+    width: 100%;
+}
+
+.new-product{
+    width: 28.1rem;
+    height: 30rem;
+    background: #efefef;
+    list-style: none;
+    padding: 4rem;
+    border-radius: 4rem;
+}
+.new-product > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
