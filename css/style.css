@@ -19,6 +19,7 @@ a{
 
 body{
     font-size: 2rem;
+    background: #fef7f6;
 }
 
 /* ==Navigation============================== */
@@ -121,7 +122,7 @@ body{
 .ring-1{
     position: absolute;
     left: 80rem;
-    top: 10.5rem;
+    top: 8rem;
     width: 35rem;
     height: 35rem;
     object-fit: contain;
@@ -192,7 +193,7 @@ body{
 /* ==New products============================== */
 
 .section--first{
-    height: 50rem;
+    min-height:45rem;
 }
 
 .section--first strong{
@@ -208,7 +209,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 6.7rem;
     font-size: 3.5rem;
     font-weight: 500;
     color: #202020;
@@ -219,20 +220,63 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 5rem;
+    gap: 4rem;
     width: 100%;
 }
 
 .new-product{
     width: 28.1rem;
     height: 30rem;
-    background: #efefef;
+    box-shadow: 0 0.1rem 1rem 0.5rem #fce9e7,
+    inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
     list-style: none;
-    padding: 4rem;
+    padding: 5rem;
+    border-radius: 3rem;
+    position: relative;
+}
+
+
+.new-product:hover{
+    cursor: pointer;
+}
+
+.new-product::after{
+    content:"NEW";
+    background: #ff6d57cf;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
     border-radius: 4rem;
+    top: 1rem;
+    left: 5%;
 }
 .new-product > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/* ==Sale============================== */
+
+.section--second{
+    height:80rem;
+}
+
+.sales{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale{
+    height: 35rem;
+    max-width: 125rem;
+    margin-top: 25rem;
+    background: #fce9e7;
+    border-radius: 3rem;
+    width:100%;
+}
+

@@ -1,4 +1,3 @@
-"# make-it-rain" 
 ## Carmen Faas SD1D
 - Ik gebruik mijn eigen naam voor mijn webshop (veel juweliers gebruiken hun eigen naam en ik vind dat ook leuk om te doen)
 
