@@ -1,6 +1,8 @@
 <?php
 require 'functions.php';
-$connection = dbConnect()
+$connection = dbConnect();
+
+$result = $connection->query('SELECT * FROM `sieraden`')
 ?>
 
 
@@ -97,8 +99,10 @@ $connection = dbConnect()
 
 
     <!-- ====new products=============================== -->
+    
     <section class="section section--first">
         <!-- text -->
+        
         <p class="new-products-text">Nieuwe Producten!</p>
         <strong>Gratis verzending bij bestellingen boven de €20!  
             <p>&#160</p>
@@ -123,7 +127,7 @@ $connection = dbConnect()
                 <p>€500</p>
             </li>
         </ul>
-        
+
     </section>
 
 
