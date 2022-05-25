@@ -222,6 +222,7 @@ body{
     height: 100%;
     gap: 4rem;
     width: 100%;
+    margin-top: 5rem;
 }
 
 .new-product{
@@ -259,6 +260,13 @@ body{
     object-fit: cover;
 }
 
+.new-product > p{
+    display: flex;
+    justify-content: end;
+    margin-top: -1rem;
+    color: #ff6c57;
+}
+
 /* ==Sale============================== */
 
 .section--second{
@@ -274,7 +282,7 @@ body{
 .sale{
     height: 35rem;
     max-width: 125rem;
-    margin-top: 25rem;
+    margin-top: 15rem;
     background: #fce9e7;
     border-radius: 3rem;
     width:100%;

@@ -1,3 +1,9 @@
+<?php
+require 'functions.php';
+$connection = dbConnect()
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,15 +108,19 @@
         <ul class="new-products">
             <li class="new-product">
                 <img src="/img/ring-3.png" alt="#">
+                <p>€200</p>
             </li>
             <li class="new-product">
                 <img src="/img/armband-3.png" alt="">
+                <p>€300</p>
             </li>
             <li class="new-product">
                 <img src="/img/ring-4.png" alt="">
+                <p>€400</p>
             </li>
             <li class="new-product">
                 <img src="/img/ketting-2.png" alt="">
+                <p>€500</p>
             </li>
         </ul>
         
