@@ -19,7 +19,7 @@ a{
 
 body{
     font-size: 2rem;
-    background: #fef7f6;
+    background: linear-gradient(#000000, #373535,#ffffff);
 }
 
 /* ==Navigation============================== */
@@ -40,7 +40,7 @@ body{
 .menu li a{
     padding: 0.3rem 1rem;
     margin: 0rem 1.5rem;
-    color: #3b3b3b;
+    color: #eee;
     font-weight: 500;
     letter-spacing: 0.05rem;
     transition: all ease 0.3s;
@@ -50,7 +50,7 @@ body{
     font-size: 5.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: #202020;
+    color: #eee;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -71,13 +71,13 @@ body{
 }
 
 .right-nav .like{
-    background-color: #fce9e7;
-    color: #ff6c57;
+    background-color: #eee;
+    color: #202020;
 }
 
 .right-nav .cart{
-    background-color: #fce9e7;
-    color: #ff6c57;
+    background-color: #eee;
+    color: #202020;
 }
 
 .right-nav a span{
@@ -90,14 +90,14 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #ffffff;
+    color: #EADCA6;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #202020;
+    background-color: #42415c;
 }
 
 .menu li a:hover, .menu .active{
-    color: #ff6c57;
+    color: #EADCA6;
     transition: all ease 0.3s;
 }
 
@@ -105,28 +105,20 @@ body{
 /* ==Search Banner============================== */
 #search-banner{
     max-width: 125rem;
-    height: 50rem;
-    border-radius: 3rem;
-    background-color: #fce9e7;
+    height: 55rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
     margin: 1rem auto;
     position: relative;
     overflow: hidden;
+    background-image: url('/img/banner-background.jpeg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100rem;
-    background-position: bottom right;
+    background-position: right 80%;
     padding: 2rem;
     display: flex;
     align-items: center;
-}
-
-.ring-1{
-    position: absolute;
-    left: 80rem;
-    top: 8rem;
-    width: 35rem;
-    height: 35rem;
-    object-fit: contain;
-    object-position: center;
+    box-shadow: 0 0rem 1rem 0.1rem #eee;
 }
 
 .search-banner-text{
@@ -140,11 +132,11 @@ body{
 .search-banner-text h1{
     font-size: 4.8rem;
     line-height: 5.5rem;
-    color: #202020;
+    color: #ffffff;
 }
 
 .search-banner-text strong{
-    color: #ff6c57;
+    color: #EADCA6;
     font-size: 2rem;
     margin-top: 0.4rem;
 }
@@ -177,16 +169,16 @@ body{
     width: 22rem;
     height: 4rem;
     border-radius: 3rem;
-    background-color: #ff6c57;
+    background-color: #EADCA6;
     border: none;
-    color: #ffffff;
+    color: #202020;
     outline: none;
     cursor: pointer;
     transition: all ease 0.3s;
 }
 
 .search-box .search-btn:hover{
-    background-color: #fd998a;
+    background-color: #E2C275;
     transition: all ease 0.3s;
 }
 
@@ -196,23 +188,34 @@ body{
     min-height:45rem;
 }
 
+.new-products-box{
+    max-width: 70rem;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin-top: 5rem;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
 .section--first strong{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ff6c57;
+    color: #EADCA6;
     font-size: 1.5rem;
-    margin-top: 0.4rem;
 }
 
 .new-products-text{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 6.7rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #202020;
+    color: #252525;
 }
 
 .new-products{
@@ -228,11 +231,9 @@ body{
 .new-product{
     width: 28.1rem;
     height: 30rem;
-    box-shadow: 0 0.1rem 1rem 0.5rem #fce9e7,
-    inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0rem 1rem 0.1rem #515151;
     list-style: none;
-    padding: 5rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     position: relative;
 }
 
@@ -243,48 +244,33 @@ body{
 
 .new-product::after{
     content:"NEW";
-    background: #ff6d57cf;
+    background: #252525;
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #eee;
     position: absolute;
     border-radius: 4rem;
     top: 1rem;
     left: 5%;
 }
-.new-product > img{
+.new-product img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem;
 }
 
 .new-product > p{
     display: flex;
     justify-content: end;
-    margin-top: -1rem;
-    color: #ff6c57;
+    color: #252525;
 }
 
 /* ==Sale============================== */
 
 .section--second{
     height:80rem;
-}
-
-.sales{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sale{
-    height: 35rem;
-    max-width: 125rem;
-    margin-top: 15rem;
-    background: #fce9e7;
-    border-radius: 3rem;
-    width:100%;
 }
 
