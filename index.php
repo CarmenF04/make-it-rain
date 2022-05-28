@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +35,7 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Nieuw</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="/login.php">Login</a></li>
             </ul>
 
             <!-- shopping cart/like -->
@@ -99,7 +98,7 @@
         <figure class="new-products-box">
 
         <p class="new-products-text">Nieuwe Producten!</p>
-        
+
         <strong>Gratis verzending bij bestellingen boven de €20!  
             <p>&#160</p>
             <i class="fa-solid fa-truck"></i>
@@ -126,10 +125,6 @@
     <!-- ====new products end==== -->
 
     <section class="section section--second">
-
-        <ul class="sales">
-            <li class="sale"></li>
-        </ul>
 
     </section>
 

@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+    font-family: poppins;
+    color: #eee;
+}
+
+body{
+    background: linear-gradient(#000000, #373535);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: poppins;
+}
+
+form{
+    width: 50rem;
+    height: 40rem;
+    border: 0.2rem solid #ccc;
+    padding: 3rem;
+    background: #202020;
+    border-radius: 1.5rem;
+    position: relative;
+    box-shadow: 0 0rem 1rem 0.1rem rgba(238, 238, 238, 0.39);
+}
+
+input{
+    display: block;
+    border: 0.2rem solid #00000075;
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+
+label{
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
