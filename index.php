@@ -1,3 +1,12 @@
+<?php
+require 'functions.php';
+$connection = dbConnect();
+
+$result = $connection->query('SELECT * FROM `jewellery` ')
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,12 +24,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <script src="/js/main.js"></script>
 </head>
 
 <body>
+
     <!-- ====navigation================================ -->
     <header>
         <nav class="navigation">
@@ -56,11 +69,12 @@
         </nav>
     </header>
     <!-- ====navigation end==== -->
-    
-    
+
+
 
     <!-- ====search-banner=============================== -->
     <section id="search-banner">
+
 
         <!-- images -->
         <img src="" class="ring-1" alt="">
@@ -86,24 +100,24 @@
             </form>
         </figure>
     </section>
-   <!-- ====search-banner end==== -->
+    <!-- ====search-banner end==== -->
 
 
 
     <!-- ====new products=============================== -->
-    
+
     <section class="section section--first">
 
         <!-- text -->
         <figure class="new-products-box">
 
-        <p class="new-products-text">Nieuwe Producten!</p>
+            <p class="new-products-text">Nieuwe Producten!</p>
 
-        <strong>Gratis verzending bij bestellingen boven de €20!  
-            <p>&#160</p>
-            <i class="fa-solid fa-truck"></i>
-        </strong>
-    </figure>
+            <strong>Gratis verzending bij bestellingen boven de €20!
+                <p>&#160</p>
+                <i class="fa-solid fa-truck"></i>
+            </strong>
+        </figure>
 
         <ul class="new-products">
             <li class="new-product">
@@ -124,8 +138,42 @@
 
     <!-- ====new products end==== -->
 
-    <section class="section section--second">
 
+
+    <section class="section section--second">
+        <figure class="products-box">
+
+            <p class="products-text">Bekijk hier onze collectie!</p>
+
+            <strong>Bent u specifiek naar iets opzoek? Gebruik de filter hier onder!</strong>
+
+        </figure>
+
+        <ul class="products-gallery">
+
+            <!-- Filter -->
+            <section class="inputs">
+
+            <input type="radio" id="ringen" class="filter"/>
+            <label for="radio-ringen">Ringen</label>
+            <input type="radio" id="armbanden" class="filter"/>
+            <label for="radio-armbanden">Armbanden</label>
+            <input type="radio" id="kettingen" class="filter"/>
+            <label for="radio-kettingen">Kettingen</label>
+            <input type="radio" id="oorbellen" class="filter"/>
+            <label for="radio-oorbellen">Oorbellen</label>
+            
+            </section>
+
+
+            <?php foreach($result as $row): ?>
+            <li class="product">
+                <img src="/img/<?php echo $row['foto'];?>" alt="">
+            </li>
+
+            <?php endforeach; ?>
+
+        </ul>
     </section>
 
 </body>
