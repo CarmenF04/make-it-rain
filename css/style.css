@@ -33,6 +33,7 @@ body{
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .menu{
@@ -203,6 +204,7 @@ body{
     margin-top: 5rem;
     flex-direction: column;
     border-radius: 1rem;
+    flex-grow: 1;
 }
 
 .section--first strong{
@@ -230,6 +232,7 @@ body{
     gap: 4rem;
     width: 100%;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .new-product{
@@ -241,6 +244,24 @@ body{
     position: relative;
 }
 
+.new-product > .popup-text{
+    opacity: 0;
+    color: white;
+    transition: opacity 400ms, transform 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-product:is(:hover, :focus) > .img{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+
+.new-product:is(:hover, :focus) > .popup-text{
+    transform: scale(1.2);
+    opacity: 1;
+}
 
 .new-product:hover{
     cursor: pointer;
@@ -313,22 +334,6 @@ body{
     display: flex;
 }
 
-label{
-    width:10%;
-    height: 30%;
-    text-align:center;
-    background:#ffffff;
-    color:#222222;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-  input[type="radio"] {
-    display:none;
-}
-
-
 .inputs{
     display: flex;
     align-items: center;
@@ -338,11 +343,40 @@ label{
     flex-wrap: wrap;
 }
 
+.inputs > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+}
+
+.filter{
+    width: 5rem;
+    height: 3rem;
+    margin-right: 2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #eee;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter:checked{
+    background: #EADCA6;
+}
+
 .filter:checked ~ .label{
     text-decoration: underline;
 }
 
-    
+.label{
+    color: #eee;
+}
+
+.filter:hover{
+    cursor: pointer;
+}
+
 /* ==Filter end============================== */
 
 

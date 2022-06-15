@@ -29,7 +29,7 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <script src="/js/main.js"></script>
+        <script src="/js/main.js" defer></script>
 </head>
 
 <body>
@@ -120,24 +120,28 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
         </figure>
 
         <ul class="new-products">
+            
             <li class="new-product">
                 <img src="/img/zilverenring-1.JPG" alt="#">
+                <p class="popup-text">Bestel Nu!</p>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenoorbel-1.JPG" alt="">
+                <p class="popup-text">Bestel Nu!</p>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenring-2.JPG" alt="">
+                <p class="popup-text">Bestel Nu!</p>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenkettinghanger-1.JPG" alt="">
+                <p class="popup-text">Bestel Nu!</p>
             </li>
         </ul>
 
     </section>
 
     <!-- ====new products end==== -->
-
 
 
     <section class="section section--second">
@@ -154,22 +158,29 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
             <!-- Filter -->
             <section class="inputs">
 
-            <input type="radio" id="ringen" class="filter"/>
-            <label for="radio-ringen">Ringen</label>
-            <input type="radio" id="armbanden" class="filter"/>
-            <label for="radio-armbanden">Armbanden</label>
-            <input type="radio" id="kettingen" class="filter"/>
-            <label for="radio-kettingen">Kettingen</label>
-            <input type="radio" id="oorbellen" class="filter"/>
-            <label for="radio-oorbellen">Oorbellen</label>
+            <div>
+                <input id="checkbox-ring" type="checkbox" class="filter">
+                <label for="checkbox-ring" class="label">Ringen</label>
+            </div>
+            <div>
+                <input id="checkbox-ketting" type="checkbox" class="filter">
+                <label for="checkbox-ketting" class="label">Kettingen</label>
+            </div>
+            <div>
+                <input id="checkbox-armband" type="checkbox" class="filter">
+                <label for="checkbox-armband" class="label">Armbanden</label>
+            </div>
+            <div>
+                <input id="checkbox-oorbel" type="checkbox" class="filter">
+                <label for="checkbox-oorbel" class="label">Oorbellen</label>
+            </div>
             
             </section>
 
 
             <?php foreach($result as $row): ?>
-            <li class="product">
-                <img src="/img/<?php echo $row['foto'];?>" alt="">
-            </li>
+                
+            <li class="product" data-category="<?php echo $row['catogorie']; ?>"> <img src="/img/<?php echo $row['foto'];?>" alt=""></li>
 
             <?php endforeach; ?>
 
