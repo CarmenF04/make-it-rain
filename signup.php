@@ -19,9 +19,6 @@ session_start();
             mysqli_query($con, $query);
 
             header("Location: login.php");
-
-       }else{
-           echo "Please enter some valid information";
        }
     }
 
@@ -54,9 +51,10 @@ session_start();
         <label>New Password</label>
         <input type="password" name="password"><br><br>
 
-        <input type="submit" value="SignUp"><br><br>
+        <input class="submit__button" type="submit" value="SIGN UP"><br><br>
 
         <a href="login.php">Click to Login</a><br><br>
+        <a class="return" href="index.php">Terug  naar de home pagina</a><br><br>
     </form>
 
     </article>

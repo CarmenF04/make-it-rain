@@ -33,7 +33,7 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
 </head>
 
 <body>
-
+    <main>
     <!-- ====navigation================================ -->
     <header>
         <nav class="navigation">
@@ -123,19 +123,19 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
             
             <li class="new-product">
                 <img src="/img/zilverenring-1.JPG" alt="#">
-                <p class="popup-text">Bestel Nu!</p>
+                <button class="details__button"><a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a></button>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenoorbel-1.JPG" alt="">
-                <p class="popup-text">Bestel Nu!</p>
+                <button class="details__button"><a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a></button>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenring-2.JPG" alt="">
-                <p class="popup-text">Bestel Nu!</p>
+                <button class="details__button"><a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a></button>
             </li>
             <li class="new-product">
                 <img src="/img/zilverenkettinghanger-1.JPG" alt="">
-                <p class="popup-text">Bestel Nu!</p>
+                <button class="details__button"><a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a></button>
             </li>
         </ul>
 
@@ -179,13 +179,21 @@ $result = $connection->query('SELECT * FROM `jewellery` ')
 
 
             <?php foreach($result as $row): ?>
-                
-            <li class="product" data-category="<?php echo $row['catogorie']; ?>"> <img src="/img/<?php echo $row['foto'];?>" alt=""></li>
+            
+            <li class="product" data-category="<?php echo $row['catogorie']; ?>"><img src="/img/<?php echo $row['foto'];?>" alt="">
+            <button class="details__button"><a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a></button>
+            </li>
 
             <?php endforeach; ?>
 
         </ul>
     </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
 
 </body>
 

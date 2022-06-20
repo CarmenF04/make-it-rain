@@ -5,6 +5,10 @@
     font-family: poppins;
 }
 
+:root{
+    --accent-color: #c5e6ff;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -21,6 +25,7 @@ body{
     font-size: 2rem;
     background: linear-gradient(#000000, #000000,#000000);
 }
+
 
 /* ==Navigation============================== */
 
@@ -93,14 +98,14 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #EADCA6;
+    color: var(--accent-color);
     font-size: 1rem;
     font-weight: 500;
     background-color: #42415c;
 }
 
 .menu li a:hover, .menu .active{
-    color: #EADCA6;
+    color: #9cc7e8;
     transition: all ease 0.3s;
 }
 
@@ -141,7 +146,7 @@ body{
 }
 
 .search-banner-text strong{
-    color: #EADCA6;
+    color: var(--accent-color);
     font-size: 2rem;
     margin-top: 0.4rem;
 }
@@ -174,7 +179,7 @@ body{
     width: 22rem;
     height: 4rem;
     border-radius: 3rem;
-    background-color: #EADCA6;
+    background-color: var(--accent-color);
     border: none;
     color: #202020;
     outline: none;
@@ -183,7 +188,7 @@ body{
 }
 
 .search-box .search-btn:hover{
-    background-color: #E2C275;
+    background-color: #83a4d4;
     transition: all ease 0.3s;
 }
 
@@ -244,15 +249,6 @@ body{
     position: relative;
 }
 
-.new-product > .popup-text{
-    opacity: 0;
-    color: white;
-    transition: opacity 400ms, transform 400ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .new-product:is(:hover, :focus) > .img{
     transform: scale(1.1);
     filter: brightness(0.4);
@@ -269,12 +265,12 @@ body{
 
 .new-product::after{
     content:"NEW";
-    background: #252525;
+    background: var(--accent-color);
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #eee;
+    color: #252525;
     position: absolute;
     border-radius: 4rem;
     top: 1rem;
@@ -285,12 +281,6 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
-}
-
-.new-product > p{
-    display: flex;
-    justify-content: end;
-    color: #252525;
 }
 
 /* ==Sale============================== */
@@ -362,11 +352,11 @@ body{
 }
 
 .filter:checked{
-    background: #EADCA6;
+    background: var(--accent-color);
 }
 
 .filter:checked ~ .label{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .label{
@@ -389,6 +379,43 @@ body{
     position: relative;
 }
 
+.product:hover{
+    cursor: pointer;
+}
+
+.details__button{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    margin-top: 1.3rem;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.15) 0 1px 2px,rgba(255, 255, 255, 0.15) 0 2px 4px,rgba(255, 255, 255, 0.15) 0 4px 8px,rgba(255, 255, 255, 0.15) 0 8px 16px,rgba(255, 255, 255, 0.15) 0 16px 32px;
+    color: #252525;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.details__button:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0 -25px 18px -14px inset,rgba(255, 255, 255, 0.25) 0 1px 2px,rgba(255, 255, 255, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(255, 255, 255, 0.25) 0 16px 32px;
+    transform: scale(1.05)
+}
+
+.details__button > a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .product img{
     width: 100%;
     height: 100%;
@@ -401,10 +428,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 4rem;
+    gap: 5rem;
     width: 100%;
     margin-top: 5rem;
     flex-wrap: wrap;
 }
-
-

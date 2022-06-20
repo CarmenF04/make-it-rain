@@ -67,14 +67,15 @@ session_start();
 
     <form method="post">
         <label>User Name</label>
-        <input type="text" name="user_name"><br><br>
+        <input type="text" name="user_name" placeholder="voornaam en achternaam"><br><br>
 
         <label>Password</label>
-        <input type="password" name="password"><br><br>
+        <input type="password" name="password" placeholder="wachtwoord"><br><br>
 
-        <input type="submit" value="Login"><br><br>
+        <input class="login__button" type="submit" value="LOGIN"><br><br>
 
         <a href="signup.php">Click to Signup</a><br><br>
+        <a class="return" href="index.php">Terug  naar de home pagina</a><br><br>
     </form>
 
     </article>
