@@ -38,7 +38,7 @@ $jewellery = $statement->fetch(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/details.css">
+    <link rel="stylesheet" href="css/details.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -55,7 +55,7 @@ $jewellery = $statement->fetch(PDO::FETCH_ASSOC);
     <ul class="details">
         <li class="details__detail">
             <figure class="details__figure">
-            <img src="/img/<?php echo $jewellery['foto'];?>" alt="" class="details__img">
+            <img src="img/<?php echo $jewellery['foto'];?>" alt="" class="details__img">
             </figure>
 
             <section class="details__body">

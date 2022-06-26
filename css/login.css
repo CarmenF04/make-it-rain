@@ -19,11 +19,11 @@ a{
     justify-content: center;
     margin-top: -2rem;
     font-family: poppins;
-    color: #eee;
+    color: #252525;
 }
 
 body{
-    background: linear-gradient(#000000, #373535);
+    background: #252525;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,9 +34,9 @@ body{
 form{
     width: 50rem;
     height: 40rem;
-    border: 0.2rem solid #ccc;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
     padding: 3rem;
-    background: #202020;
+    background: #c5e6ff;
     border-radius: 1.5rem;
     position: relative;
     box-shadow: 0 0rem 1rem 0.1rem rgba(238, 238, 238, 0.39);
@@ -44,7 +44,7 @@ form{
 
 input{
     display: block;
-    border: 0.2rem solid #00000075;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
     width: 95%;
     padding: 1rem;
     margin: 1rem auto;
@@ -54,7 +54,7 @@ input{
 
 
 label{
-    color: #ffffff;
+    color: #252525;
     font-size: 1.8rem;
     padding: 1rem;
 }
@@ -64,10 +64,13 @@ label{
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 700;
+    transition: all 250ms;
 }
 
 .login__button:hover, .submit__button:hover{
-    background: #EADCA6;
+    background: #5db9ff;
+    box-shadow: rgba(148, 178, 255, 0.477) 0 -25px 18px -14px inset,rgba(255, 255, 255, 0.25) 0 1px 2px,rgba(255, 255, 255, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(255, 255, 255, 0.25) 0 16px 32px;
+    transform: scale(1.05)
 }
 
 
@@ -76,4 +79,6 @@ label{
     top: 95%;
     left: 30%;
     text-decoration: underline;
+    color: #252525;
 }
+
